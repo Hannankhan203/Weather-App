@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="CSS/fonts.css" />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="CSS/colors.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- Toggle Mode -->
+    <label for="">
+      <input type="checkbox" class="styled-checkbox" id="theme-checkbox" />
+      <span class="check"></span>
+      <span class="botn"></span>
+    </label>
+    <h1 class="heading">Weather App</h1>
+    <!-- Main App -->
+    <div class="main-app">
+      <div class="weather-image"></div>
+      <div class="search-bar">
+        <input
+          type="text"
+          name=""
+          id="city-input"
+          class="city-input"
+          placeholder="Enter City Name"
+        />
+        <button class="search-btn">Search</button>
+      </div>
+      <div class="weather-result hidden" id="weather-result">
+        <div class="city-name" id="city-name"></div>
+        <p class="temp" id="temp"></p>
+        <p class="description" id="description"></p>
+        <p class="humidity" id="humidity"></p>
+        <p class="speed" id="speed"></p>
+      </div>
+      <p class="error hidden" id="error"></p>
+    </div>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

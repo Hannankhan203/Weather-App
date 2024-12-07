@@ -62,16 +62,13 @@ async function fetchWeather(city) {
       throw new Error("City not found");
     }
     const data = await response.json();
-    console.log("API data:", data);
     displayWeather(data);
   } catch (error) {
-    console.error("Error fetching weather:", error.message);
     showError(error.message);
   }
 }
 
 function displayWeather(data) {
-  console.log("Displaying weather data:", data);
   const { name } = data.location;
   const { temp_c, humidity } = data.current;
   const { text: description } = data.current.condition;

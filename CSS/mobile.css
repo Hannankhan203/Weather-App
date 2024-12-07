@@ -1,0 +1,28 @@
+body {
+  justify-content: start;
+}
+
+.heading {
+  font-size: 2rem;
+}
+.main-app {
+  /* border: 2px solid black; */
+  width: 100%;
+}
+
+label {
+  top: 92%;
+  right: 10%;
+}
+
+.after-search {
+  height: 70%;
+}
+
+.search-btn {
+  font-size: 10px;
+}
+
+.weather-result {
+  font-size: 15px;
+}
